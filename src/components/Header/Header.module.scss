@@ -1,13 +1,49 @@
 header {
+    .icon {
+        font-size: 50px;
+        margin-right: 10px;
+        transition: 1s;
+
+        &:hover {
+            transform: rotate(360deg) scale(1.2);
+        }
+    }
+
     .logo {
         font-weight: 600;
         font-size: 25px;
     }
 
+    .shopCartButton {
+        font-size: 30px;
+        margin-top: 25px;
+        float: right;
+        cursor: pointer;
+        transition: color 500ms ease;
+
+        &:hover,
+        &.active {
+            color: #8E6746;
+        }
+    }
+
+    .shopCart {
+        position: absolute;
+        top: 110px;
+        right: 250px;
+        width: 450px;
+        min-height: 100px;
+        background: #F1E9D6; //#EEF0DC #7D806A
+        z-index: 1000;
+        box-shadow: -7px 12px 17px 1px rgba(113, 156, 115, 0.36);
+        -webkit-box-shadow: -7px 12px 17px 1px rgba(113, 156, 115, 0.36);
+        -moz-box-shadow: -7px 12px 17px 1px rgba(113, 156, 115, 0.36);
+    }
+
     .nav {
         float: right;
         list-style: none;
-        margin-top: 5px;
+        margin-top: 30px;
 
         li {
             display: inline;
@@ -17,9 +53,20 @@ header {
             font-weight: 500;
             transition: opacity 500ms ease;
 
-            &:hover{
+            &:hover {
                 opacity: 0.5;
             }
+        }
+    }
+
+    .lgo {
+        height: 100px;
+        position: absolute;
+        margin-left: 500px;
+        transition: transform 1000ms ease;
+
+        &:hover {
+            transform: scale(1.3);
         }
     }
 
