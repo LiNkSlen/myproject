@@ -1,4 +1,22 @@
 header {
+    position: relative;
+
+    .empty {
+        h2 {
+            font-size: 20px;
+            margin: 20px auto;
+            text-align: center;
+        }
+    }
+
+    .summa {
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
     .icon {
         font-size: 50px;
         margin-right: 10px;
@@ -29,8 +47,8 @@ header {
 
     .shopCart {
         position: absolute;
-        top: 110px;
-        right: 250px;
+        top: 70px;
+        right: 0;
         width: 450px;
         min-height: 100px;
         background: #F1E9D6; //#EEF0DC #7D806A
@@ -38,6 +56,9 @@ header {
         box-shadow: -7px 12px 17px 1px rgba(113, 156, 115, 0.36);
         -webkit-box-shadow: -7px 12px 17px 1px rgba(113, 156, 115, 0.36);
         -moz-box-shadow: -7px 12px 17px 1px rgba(113, 156, 115, 0.36);
+        padding: 20px;
+        padding-bottom: 0;
+        border-radius: 15px;
     }
 
     .nav {
@@ -60,6 +81,7 @@ header {
     }
 
     .lgo {
+        width: 150px;
         height: 100px;
         position: absolute;
         margin-left: 500px;
